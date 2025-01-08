@@ -13,23 +13,45 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
             color: #333;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
         }
 
         .container {
             text-align: center;
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 90%;
             max-width: 400px;
+            margin-top: 30px;
         }
 
         .profile-pic {
@@ -70,11 +92,40 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="james.jpeg" alt="Foto de perfil" class="profile-pic">
-        <h1>Ing. James Yonathan Mena De La Cruz</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div id="inicio" class="container">
+        <img src="tu_foto.jpg" alt="Foto de perfil" class="profile-pic">
+        <h1>Nombre Apellido</h1>
         <p>Soy estudiante de Ingeniería Civil en UTEC con experiencia en Matlab, Python, AutoCAD y Civil 3D. Aspiro a especializarme en ingeniería estructural y contribuir al desarrollo sostenible en mi comunidad.</p>
-        <a href="https://www.linkedin.com/in/james-mena-de-la-cruz-0a3bb7222/" target="_blank">Conéctate conmigo en LinkedIn</a>
+        <a href="https://linkedin.com" target="_blank">Conéctate conmigo en LinkedIn</a>
+    </div>
+
+    <div id="servicios" class="container">
+        <h1>Servicios</h1>
+        <p>Ofrecemos soluciones en diseño estructural, planificación urbana, y gestión de proyectos para garantizar resultados de alta calidad.</p>
+    </div>
+
+    <div id="nosotros" class="container">
+        <h1>Nosotros</h1>
+        <p>Somos un equipo comprometido con la innovación y la sostenibilidad en cada proyecto que emprendemos.</p>
+    </div>
+
+    <div id="proyectos" class="container">
+        <h1>Proyectos</h1>
+        <p>Conoce algunos de nuestros proyectos destacados que reflejan nuestro compromiso con la excelencia.</p>
+    </div>
+
+    <div id="contacto" class="container">
+        <h1>Contacto</h1>
+        <p>¿Tienes un proyecto en mente? ¡Contáctanos y hagámoslo realidad!</p>
+        <a href="mailto:correo@example.com">correo@example.com</a>
     </div>
 </body>
 </html>

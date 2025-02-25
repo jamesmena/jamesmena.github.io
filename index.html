@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #eeff0046;
         }
 
         #inicio {
@@ -32,7 +33,7 @@
 
         nav {
             width: 100%;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(0, 123, 255, 0.9);
             padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -42,24 +43,24 @@
 
         nav a {
             text-decoration: none;
-            color: #007BFF;
+            color: white;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #0056b3;
+            color: #d900ff;
         }
 
         .container {
             text-align: center;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgb(172, 186, 136);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 400px;
-            margin-top: 30px;
+            max-width: 600px;
+            margin: 30px auto;
         }
 
         .profile-pic {
@@ -68,34 +69,34 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
-            border: 2px solid #cccccc;
+            border: 2px solid #2600ff;
         }
 
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #222;
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
         }
 
-        p {
-            font-size: 1em;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            color: #555;
+        .service-box {
+            background: #3c01ff9d;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        a {
-            display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s;
-        }
-
-        a:hover {
-            border-color: #007BFF;
+        .section {
+            background: #cf004f51;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            text-align: center;
+            max-width: 800px;
         }
     </style>
 </head>
@@ -111,34 +112,37 @@
     <div id="inicio">
         <div class="container">
             <img src="james.jpeg" alt="Foto de perfil" class="profile-pic">
-            <h1>Ing. James Yonathan Mena De La Cruz</h1>
-            <p>Soy estudiante de Ingeniería Civil en UTEC con experiencia en Matlab, Python, AutoCAD y Civil 3D. Aspiro a especializarme en ingeniería estructural y contribuir al desarrollo sostenible en mi comunidad.</p>
-            <a href="https://www.linkedin.com/in/james-mena-de-la-cruz-0a3bb7222/" target="_blank">Conéctate conmigo en LinkedIn</a>
+            <h1>INFRACIV PERÚ Consultoría</h1>
+            <h2>Del Ing. James Yonathan Mena De La Cruz</h2>
+            <h2>¿Quienes somos?</h2>
+            <p>INFRACIV PERÚ es una firma especializada en consultoría en ingeniería civil, dedicada a ofrecer soluciones eficientes, sostenibles e innovadoras para el desarrollo de infraestructura y proyectos de construcción.</p>
         </div>
     </div>
 
-    <div id="servicios" class="container">
-        <h1>Servicios</h1>
-        <p>Ofrecemos soluciones en diseño estructural, planificación urbana, y gestión de proyectos para garantizar resultados de alta calidad.</p>
+    <div id="servicios" class="services-container">
+        <div class="service-box"><h2>Diseño Estructural</h2><p>Modelado y análisis estructural con software avanzado.</p></div>
+        <div class="service-box"><h2>Supervisión de Obras</h2><p>Garantizamos la calidad y seguridad en construcción.</p></div>
+        <div class="service-box"><h2>Estudios Geotécnicos</h2><p>Evaluamos suelos para cimentaciones seguras.</p></div>
+        <div class="service-box"><h2>Hidráulica e Hidrología</h2><p>Diseñamos soluciones eficientes de drenaje y control de aguas.</p></div>
     </div>
 
-    <div id="nosotros" class="container">
+    <div id="nosotros" class="section">
         <h1>Nosotros</h1>
         <p>Somos un equipo comprometido con la innovación y la sostenibilidad en cada proyecto que emprendemos.</p>
     </div>
 
-    <div id="proyectos" class="container">
+    <div id="proyectos" class="section">
         <h1>Proyectos</h1>
         <p>Conoce algunos de nuestros proyectos destacados que reflejan nuestro compromiso con la excelencia.</p>
     </div>
 
-    <div id="contacto" class="container">
+    <div id="contacto" class="section">
         <h1>Contacto</h1>
         <p>¿Tienes un proyecto en mente? ¡Contáctanos y hagámoslo realidad!</p>
         <a href="mailto:jamesyonathan2001@gmail.com">jamesyonathan2001@gmail.com</a>
+        <h3>Celular: 903 437 635</h3>
     </div>
 </body>
 </html>
-
 
 
